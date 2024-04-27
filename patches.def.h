@@ -275,7 +275,7 @@
  * In dwm, if the decoration hints patch is applied, then the st window will start out without a
  * border. In GNOME and KDE the window should start without a window title.
  */
-#define NO_WINDOW_DECORATIONS_PATCH 1
+#define NO_WINDOW_DECORATIONS_PATCH 0
 
 /* Open contents of the clipboard in a user-defined browser.
  * https://st.suckless.org/patches/open_copied_url/
