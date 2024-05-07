@@ -83,19 +83,19 @@
  *
  * https://github.com/bakkeby/st-flexipatch/issues/34
  */
-#define COLUMNS_PATCH 0
+#define COLUMNS_PATCH 1
 
 /* Select and copy the last URL displayed with Mod+l. Multiple invocations cycle through the
  * available URLs.
  * https://st.suckless.org/patches/copyurl/
  */
-#define COPYURL_PATCH 0
+#define COPYURL_PATCH 1
 
 /* Select and copy the last URL displayed with Mod+l. Multiple invocations cycle through the
  * available URLs. This variant also highlights the selected URLs.
  * https://st.suckless.org/patches/copyurl/
  */
-#define COPYURL_HIGHLIGHT_SELECTED_URLS_PATCH 0
+#define COPYURL_HIGHLIGHT_SELECTED_URLS_PATCH 1
 
 /* This patch adds support for CSI escape sequences 22 and 23, which save and
  * restores the window title (for instance nvim does this when opening and closing).
@@ -121,7 +121,7 @@
 /* Return BS on pressing backspace and DEL on pressing the delete key.
  * https://st.suckless.org/patches/delkey/
  */
-#define DELKEY_PATCH 0
+#define DELKEY_PATCH 1
 
 /* This patch adds the option of disabling bold fonts globally.
  * https://st.suckless.org/patches/disable_bold_italic_fonts/
@@ -217,7 +217,7 @@
  *
  * https://st.suckless.org/patches/keyboard_select/
  */
-#define KEYBOARDSELECT_PATCH 0
+#define KEYBOARDSELECT_PATCH 1
 
 /* This patch adds support for drawing ligatures using the Harfbuzz library to transform
  * original text of a single line to a list of glyphs with ligatures included.
@@ -238,7 +238,7 @@
 /* This patch sets the _NET_WM_ICON X property with a hardcoded icon for st.
  * https://st.suckless.org/patches/netwmicon/
  */
-#define NETWMICON_PATCH 1
+#define NETWMICON_PATCH 0
 
 /* This patch sets the _NET_WM_ICON X property with an icon that is read from a farbfeld image.
  * The benefit of this patch is that you do not need an additional dependency on an external
@@ -267,7 +267,7 @@
  * same CWD (current working directory) as the original st instance.
  * https://st.suckless.org/patches/newterm/
  */
-#define NEWTERM_PATCH 1
+#define NEWTERM_PATCH 0
 
 /* This patch will set the _MOTIF_WM_HINTS property for the st window which, if the window manager
  * respects it, will show the st window without window decorations.
@@ -379,7 +379,7 @@
  *
  * https://st.suckless.org/patches/sync/
  */
-#define SYNC_PATCH 1
+#define SYNC_PATCH 0
 
 /* Instead of a default X cursor, use the xterm cursor from your cursor theme.
  * You need to uncomment the corresponding line in config.mk to use the -lXcursor library
@@ -404,7 +404,7 @@
  *
  * https://st.suckless.org/patches/undercurl/
  */
-#define UNDERCURL_PATCH 0
+#define UNDERCURL_PATCH 1
 
 /* Allows mouse scroll without modifier keys for regardless of alt screen using the external
  * scroll program.
