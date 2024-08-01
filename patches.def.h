@@ -101,7 +101,7 @@
  * restores the window title (for instance nvim does this when opening and closing).
  * https://st.suckless.org/patches/csi_22_23/
  */
-#define CSI_22_23_PATCH 0
+#define CSI_22_23_PATCH 1
 
 /* According to the specification (see link in BLINKING_CURSOR_PATCH) the "Set cursor style
  * (DECSCUSR), VT520." escape sequences define both values of 0 and 1 as a blinking block,
@@ -126,12 +126,12 @@
 /* This patch adds the option of disabling bold fonts globally.
  * https://st.suckless.org/patches/disable_bold_italic_fonts/
  */
-#define DISABLE_BOLD_FONTS_PATCH 1
+#define DISABLE_BOLD_FONTS_PATCH 0
 
 /* This patch adds the option of disabling italic fonts globally.
  * https://st.suckless.org/patches/disable_bold_italic_fonts/
  */
-#define DISABLE_ITALIC_FONTS_PATCH 1
+#define DISABLE_ITALIC_FONTS_PATCH 0
 
 /* This patch adds the option of disabling roman fonts globally.
  * https://st.suckless.org/patches/disable_bold_italic_fonts/
@@ -267,7 +267,7 @@
  * same CWD (current working directory) as the original st instance.
  * https://st.suckless.org/patches/newterm/
  */
-#define NEWTERM_PATCH 0
+#define NEWTERM_PATCH 1
 
 /* This patch will set the _MOTIF_WM_HINTS property for the st window which, if the window manager
  * respects it, will show the st window without window decorations.
@@ -410,7 +410,7 @@
  * scroll program.
  * https://st.suckless.org/patches/universcroll/
  */
-#define UNIVERSCROLL_PATCH 0
+#define UNIVERSCROLL_PATCH 1
 
 /* Use XftFontMatch in place of FcFontMatch.
  *
@@ -424,7 +424,7 @@
  *
  * https://git.suckless.org/st/commit/528241aa3835e2f1f052abeeaf891737712955a0.html
  */
-#define USE_XFTFONTMATCH_PATCH 0
+#define USE_XFTFONTMATCH_PATCH 1
 
 /* Vertically center lines in the space available if you have set a larger chscale in config.h
  * https://st.suckless.org/patches/vertcenter/
@@ -456,7 +456,7 @@
  * https://github.com/Dreomite/st/commit/e3b821dcb3511d60341dec35ee05a4a0abfef7f2
  * https://www.reddit.com/r/suckless/comments/jt90ai/update_support_for_proper_glyph_rendering_in_st/
  */
-#define WIDE_GLYPHS_PATCH 1
+#define WIDE_GLYPHS_PATCH 0
 
 /* There is a known issue that Google's Variable Fonts (VF) can end up with letter spacing
  * that is too wide in programs that use Xft, for example Inconsolata v3.000.

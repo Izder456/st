@@ -5,12 +5,12 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Spleen:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Spleen:pixelsize=16:antialias=false:autohint=false";
 #if FONT2_PATCH
 /* Spare fonts */
 static char *font2[] = {
-  "Unifont:pixelsize=16:antialias=true:autohint=true",
-  "Symbols Nerd Font Mono:pixelsize=16:antialias=true:autohint=true"
+  "Unifont:pixelsize=16:antialias=false:autohint=false",
+  "Symbols Nerd Font Mono:pixelsize=16:antialias=false:autohint=false"
 };
 #endif // FONT2_PATCH
 
@@ -27,7 +27,7 @@ static const int pseudotransparency = 0;
 #if RELATIVEBORDER_PATCH
 /* borderperc: percentage of cell width to use as a border
  *             0 = no border, 100 = border width is same as cell width */
-int borderperc = 100;
+int borderperc = 75;
 #else
 static int borderpx = 14;
 #endif // RELATIVEBORDER_PATCH
@@ -116,7 +116,7 @@ static unsigned int cursorthickness = 2;
  *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
  * 0: disable (render all U25XX glyphs normally from the font).
  */
-const int boxdraw = 0;
+const int boxdraw = 1;
 const int boxdraw_bold = 0;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
@@ -753,5 +753,5 @@ static char *plumb_cmd = "plumb";
 #define UNDERCURL_SPIKY 1
 #define UNDERCURL_CAPPED 2
 // Active style
-#define UNDERCURL_STYLE UNDERCURL_SPIKY
+#define UNDERCURL_STYLE UNDERCURL_CURLY
 #endif // UNDERCURL_PATCH
