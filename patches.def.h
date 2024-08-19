@@ -444,7 +444,7 @@
 /* Briefly inverts window content on terminal bell event.
  * https://st.suckless.org/patches/visualbell/
  */
-#define VISUALBELL_1_PATCH 1
+#define VISUALBELL_1_PATCH 0
 
 /* Adds support for w3m images.
  * https://st.suckless.org/patches/w3m/
